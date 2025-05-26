@@ -1,0 +1,4 @@
+Error: Name 'alberd' needs to start in uppercase!
+Error: Name 'Slava2009' contains invalid characters!
+Error: Name '$EKPETHUbI' needs to start in uppercase!
+Error: Name 'sasha' needs to start in uppercase!
