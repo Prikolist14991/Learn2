@@ -3,16 +3,22 @@ import sys
 
 def Welcome():
         for line in sys.stdin:
-            error = open("error.txt", 'a')
             name = line.strip()
-            if not name:
-                return
-            if not name.isalpha():
-                error.write(f"Error: Name '{name}' have wrong symbols!")
-            if not name[0].isupper():
-                error.write(f"Error: Name '{name}' needs to start in uppercase!")
-            else:
-                print(f"Hello! {name}")
+            Last(name)
+        if sys.stdin == None:
+            a = input("Say your name")
+            Last(a)
+def Last(name):
+    error = open("error.txt", 'a')
+    if not name:
+        return
+    if not name[0].isupper():
+        error.write(f"Error: Name '{name}' needs to start in uppercase!")
+    if not name.isalpha():
+        error.write(f"Error: Name '{name}' have wrong symbols!")
+    else:
+        print(f"Hello! {name}")
+
 
 
 Welcome()
