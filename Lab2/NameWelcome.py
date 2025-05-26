@@ -3,16 +3,20 @@ import sys
 
 def Welcome():
         for line in sys.stdin:
-            name = line.sptrip()
+            error = open("error.txt", 'a')
+            name = line.strip()
             if not name:
                 return
             if not name.isalpha():
-                print(f"Error: Name '{name}' have wrong symbols!", file='error.txt')
+                error.write(f"Error: Name '{name}' have wrong symbols!")
             if not name[0].isupper():
-                print(f"Error: Name '{name}' needs to start in uppercase!", file='error.txt')
-            print(f"Nice to see you {name}!")
+                error.write(f"Error: Name '{name}' needs to start in uppercase!")
+            else:
+                print(f"Hello! {name}")
+
 
 Welcome()
+
 
 
 
