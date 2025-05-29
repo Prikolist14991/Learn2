@@ -5,7 +5,7 @@ import sys
 def Stdintest():
     try:
         A = float(input())
-        B = random(-10,10)
+        B = random.randint(-10,10)
         stder = A/B
     except ValueError as e:
         print('Wrong value')
@@ -14,4 +14,4 @@ def Stdintest():
     else:
         print(stder)
 
-Stdintest
+Stdintest()
