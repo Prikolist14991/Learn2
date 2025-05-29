@@ -19,5 +19,5 @@ chmod -x quest3.py
 Запускаем
 
 ```
-./quest1.py |./quest2.py 2> errors.txt |./quest3.py 2> errors.txt >> output.txt
+./quest1.py |./quest2.py 2> errors.txt |./quest3.py 2> errors.txt
 ```
