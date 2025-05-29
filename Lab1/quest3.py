@@ -4,7 +4,7 @@ import sys
 
 def Last():
     try:
-        inp = float(input)
+        inp = float(input())
         if inp == 0:
             raise Exception()
     except Exception:
@@ -14,4 +14,5 @@ def Last():
     else:
         sqrt_num = math.sqrt(inp)
         with open('output.txt', 'w') as f:
-            f.write(f"{inp} ")
+            f.write(f"{sqrt_num } ")
+Last()
